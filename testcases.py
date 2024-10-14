@@ -16,39 +16,9 @@ driver.maximize_window()
 # Set an implicit wait time of 30 seconds to handle dynamic elements
 driver.implicitly_wait(30)
 
-# Find the signup page button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div[3]/button').click()
-time.sleep(5)
-
-# On the signup page find the firstname input field by its xpath and enter the firstname
-driver.find_element(By.XPATH, "/html/body/div/form/p[1]/input").send_keys("Modupe")
-time.sleep(5)
-
-# On the signup page Find the lastname input field by its xpath and enter the lastname
-driver.find_element(By.XPATH, "/html/body/div/form/p[2]/input").send_keys("adeola")
-time.sleep(5)
-
-# On the signup page Find the email input field by its xpath and enter the email
-driver.find_element(By.XPATH, "/html/body/div/form/p[3]/input").send_keys("adetiba@gmail.com")
-time.sleep(5)
-
-# On the signup page Find the password input field by its xpath and enter the password
-driver.find_element(By.XPATH, "/html/body/div/form/p[4]/input").send_keys("adeola12")
-time.sleep(5)
-
-# Find the submit button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div/p[2]/button[1]').click()
-time.sleep(5)
-
-# After successful signup,navigate to logout button
-# Find the logout button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div/header/button').click()
-time.sleep(5)
-
 # Testing for Negative login
-# after successful logout,
 # On the home page Find the email input field by its xpath and enter an email that is not used while doing registration
-driver.find_element(By.XPATH, "/html/body/div[3]/form/p[1]/input").send_keys("adeayo@gmail.com")
+driver.find_element(By.XPATH, "/html/body/div[3]/form/p[1]/input").send_keys("adeayo@gmail")
 time.sleep(5)
 
 # On the home page Find the password input field by its xpath and enter the password
@@ -635,39 +605,9 @@ driver.maximize_window()
 # Set an implicit wait time of 30 seconds to handle dynamic elements
 driver.implicitly_wait(30)
 
-# Find the signup page button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div[3]/button').click()
-time.sleep(5)
-
-# On the signup page find the firstname input field by its xpath and enter the firstname
-driver.find_element(By.XPATH, "/html/body/div/form/p[1]/input").send_keys("Modupe")
-time.sleep(5)
-
-# On the signup page Find the lastname input field by its xpath and enter the lastname
-driver.find_element(By.XPATH, "/html/body/div/form/p[2]/input").send_keys("adeola")
-time.sleep(5)
-
-# On the signup page Find the email input field by its xpath and enter the email
-driver.find_element(By.XPATH, "/html/body/div/form/p[3]/input").send_keys("adegbemi@gmail.com")
-time.sleep(5)
-
-# On the signup page Find the password input field by its xpath and enter the password
-driver.find_element(By.XPATH, "/html/body/div/form/p[4]/input").send_keys("adeola12")
-time.sleep(5)
-
-# Find the submit button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div/p[2]/button[1]').click()
-time.sleep(5)
-
-# After successful signup,navigate to logout button
-# Find the logout button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div/header/button').click()
-time.sleep(5)
-
 # Testing for Negative login
-# after successful logout,
 # On the home page Find the email input field by its xpath and enter an email that is not used while doing registration
-driver.find_element(By.XPATH, "/html/body/div[3]/form/p[1]/input").send_keys("adeayo@gmail.com")
+driver.find_element(By.XPATH, "/html/body/div[3]/form/p[1]/input").send_keys("adeayo@gmail")
 time.sleep(5)
 
 # On the home page Find the password input field by its xpath and enter the password
@@ -679,7 +619,7 @@ driver.find_element(By.ID, 'submit').click()
 time.sleep(5)
 
 # Initialize Chrome WebDriver again for the negative login
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 
 # Navigate to the URL
 driver.get("https://thinking-tester-contact-list.herokuapp.com/")
@@ -1253,37 +1193,7 @@ driver.maximize_window()
 # Set an implicit wait time of 30 seconds to handle dynamic elements
 driver.implicitly_wait(30)
 
-# Find the signup page button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div[3]/button').click()
-time.sleep(5)
-
-# On the signup page find the firstname input field by its xpath and enter the firstname
-driver.find_element(By.XPATH, "/html/body/div/form/p[1]/input").send_keys("Modupe")
-time.sleep(5)
-
-# On the signup page Find the lastname input field by its xpath and enter the lastname
-driver.find_element(By.XPATH, "/html/body/div/form/p[2]/input").send_keys("adeola")
-time.sleep(5)
-
-# On the signup page Find the email input field by its xpath and enter the email
-driver.find_element(By.XPATH, "/html/body/div/form/p[3]/input").send_keys("adeyeri@gmail.com")
-time.sleep(5)
-
-# On the signup page Find the password input field by its xpath and enter the password
-driver.find_element(By.XPATH, "/html/body/div/form/p[4]/input").send_keys("adeola12")
-time.sleep(5)
-
-# Find the submit button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div/p[2]/button[1]').click()
-time.sleep(5)
-
-# After successful signup,navigate to logout button
-# Find the logout button using xpath and click on it
-driver.find_element(By.XPATH, '/html/body/div/header/button').click()
-time.sleep(5)
-
 # Testing for Negative login
-# after successful logout,
 # On the home page Find the email input field by its xpath and enter an email that is not used while doing registration
 driver.find_element(By.XPATH, "/html/body/div[3]/form/p[1]/input").send_keys("adeayo@gmail.com")
 time.sleep(5)
@@ -1296,8 +1206,8 @@ time.sleep(5)
 driver.find_element(By.ID, 'submit').click()
 time.sleep(5)
 
-# Initialize Chrome WebDriver again for the negative login
-driver = webdriver.Chrome()
+# Initialize Edge WebDriver again for the negative login
+driver = webdriver.Edge()
 
 # Navigate to the URL
 driver.get("https://thinking-tester-contact-list.herokuapp.com/")
